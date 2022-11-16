@@ -2,7 +2,7 @@
 // ინფუთი
 let form = document.querySelector(".form");
 let input = document.querySelector(".input");
-let ul = document.querySelector(".ul");
+let ul = document.querySelector(".ul-form");
 let add = document.querySelector(".add");
 let clear = document.querySelector(".clearAll");
 
@@ -27,4 +27,13 @@ form.addEventListener("submit", function(event) {
 
 clear.addEventListener("click", function() {
     ul.innerHTML = " ";
+})
+
+// burger animation
+
+let burger = document.querySelector(".burger-container");
+let miniNav = document.querySelector(".active-content")
+burger.addEventListener("click", function() {
+    burger.classList.toggle("active");
+    miniNav.classList.toggle("active");
 })

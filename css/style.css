@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(169, 145, 196);
+}
+.nav-wrap {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.logo {
+    font-size: 20px;
+    color: aliceblue;
+    font-family: monospace;
+}
+.ul {
+    display: flex;
+}
+.ul li:nth-child(2) {
+    margin: 0 20px 0 20px;
+}
+
+.burger-container {
+    width: 45px;
+    height: 40px;
+    background-color: cornflowerblue;
+    border-radius: 15%;
+    border: 1px solid grey;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    width: 90%;
+    height: 15%;
+    background-color: white;
+    display: block;
+    border-radius: 1px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.4s linear;
+}
+.bar1 {
+    top: 25%;
+}
+.bar2 {
+    top: 37%;
+}
+.bar3 {
+    top: 50%;
+}
+.active .bar1 {
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.active .bar3 {
+    top: 37%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+.active .bar2 {
+    display: none;
+}
+.active-content {
+    margin-top: 50px;
+    height: fit-content;
+    background-color: rgb(233, 122, 177);
+}
+.ul-active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.ul-active li {
+    margin: 5px 0 5px 0;
+}
+.active .active-content {
+    margin-top: 50px;
+    height: fit-content;
+    background-color: rgb(233, 122, 177);
+    display: block;
+}
+.active .ul-active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.active .ul-active li {
+    margin: 5px 0 5px 0;
+}
+.form-wrap {
+    width: fit-content;
+    margin: auto;
+}
+.ul-form {
+    color: white;
+}
+.ul-form li {
+    display: flex;
+    justify-content: space-between;
+}

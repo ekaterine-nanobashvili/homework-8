@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .burger-container {
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+    .nav-wrap {
+        justify-content: left;
+    }
+}
